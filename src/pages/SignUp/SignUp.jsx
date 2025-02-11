@@ -58,7 +58,7 @@ export default function SignUp() {
 
 
   return <>
-    <section className="py-10 shadow-2xl mt-5 p-5 m-auto" style={{ width: "55%" }}>
+    <section className="py-10 shadow-2xl mt-5 p-5 m-auto md:w-1/2" >
       <div className="container">
         <h1 className="text-3xl mb-5 text-center">
           Register Now

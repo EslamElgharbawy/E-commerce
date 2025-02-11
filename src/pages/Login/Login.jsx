@@ -58,7 +58,7 @@ export default function Login() {
 
 
   return <>
-    <section className="py-10 shadow-2xl mt-5 p-5 m-auto" style={{width:"55%"}}>
+    <section className="py-10 shadow-2xl mt-5 p-5 m-auto md:w-1/2" >
       <div className="container">
         <h1 className="text-3xl mb-5 text-center">
           Login Now
@@ -92,7 +92,7 @@ export default function Login() {
           </div>
           {invalidEmailorPasswordErro && <p className="text-red-600 mt-1">* {invalidEmailorPasswordErro}</p>}
 
-          <div className="flex justify-between">
+          <div className="flex sm:max-lg:flex-col sm:max-lg:gap-3 justify-between text-center">
             <button type="submit" className="btn bg-green-500 hover:bg-green-600 hover:duration-300 px-4 text-lg">Login</button>
             <Link to={'/forgetpassword'}
             className="font-semibold text-xl hover:text-green-600 transition-all duration-300 ">forget your password ?</Link>
